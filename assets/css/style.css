@@ -1,0 +1,253 @@
+body {
+    background-color: #e9f0f7;
+    margin: 0px;
+    padding: 0px;
+}
+.fixed-top {
+    z-index: 1030; /* Makes sure it stays on top of other content */
+  }
+  
+.header-nav {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.header-nav:hover {
+    color: #0d6efd !important;
+    text-decoration: underline;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Important to fill the div without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
+    /* Optional: dark overlay */
+}
+
+/* Form container */
+.contact-section {
+    background-image: url("../images/abb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* Important */
+    z-index: 1;
+}
+
+.contact-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark black overlay with 50% opacity */
+    z-index: 2;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 3;
+    /* Keep the text above the overlay */
+    color: white;
+    /* Make text white for better visibility */
+}
+
+/* Form fields */
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Labels inside floating form fields */
+.form-floating>label {
+    color: #6c757d;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #084298;
+    transform: translateY(-2px);
+}
+
+/* Small animation on hover */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Contact Info list */
+ul.list-unstyled li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+ul.list-unstyled li a {
+    /* color: #0d6efd; */
+    text-decoration: none;
+}
+
+ul.list-unstyled li a:hover {
+    text-decoration: underline;
+}
+
+.card.card-cover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card.card-cover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional overlay effect */
+.card.card-cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease;
+}
+
+.card.card-cover:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image-container {
+    overflow: hidden;
+    height: 200px;
+}
+
+.zoom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover .zoom-img {
+    transform: scale(1.1);
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ /* Arrows */
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+   background-color: #0669fe !important;
+   border-radius: 50%;
+   padding: 10px;
+ }
+
+ /* Indicators (dots) */
+ .carousel-indicators [data-bs-target] {
+    background-color: #0669fe !important;
+    
+  }
+
+  .carousel-indicators {
+    bottom: -40px;
+    justify-content: center;
+  }
+
+  .carousel-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+/* footer */
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #0d6efd !important;
+    /* Blue on hover */
+    text-decoration: underline;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.bi:hover {
+    color: #0d6efd !important;
+    /* Blue on hover */
+    text-decoration: underline;
+}
+
+

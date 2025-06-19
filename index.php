@@ -167,8 +167,8 @@
               <li><a href="#" class="nav-link px-2 text-white header-nav">Contact</a></li>
             </ul>
             <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
             </form>
             <div class="text-end">
               <button type="button" class="btn btn-primary ms-2 me-2" data-bs-toggle="modal"
@@ -396,42 +396,42 @@
 
   <!-- Counter -->
   <section class="py-5 bg-light">
-  <div class="container text-center" data-aos="fade-down" data-aos-duration="3000">
-    <h2 class="mb-4 fs-2 fw-bold">Our Achievements</h2>
-    <p class="text-muted fs-5 mb-5">Trusted nationwide with a growing impact.</p>
+    <div class="container text-center" data-aos="fade-down" data-aos-duration="3000">
+      <h2 class="mb-4 fs-2 fw-bold">Our Achievements</h2>
+      <p class="text-muted fs-5 mb-5">Trusted nationwide with a growing impact.</p>
 
-    <div class="row g-4">
-      <div class="col-6 col-md-3">
-        <i class="bi bi-people-fill fs-1 text-primary mb-2"></i>
-        <h3 class="fw-bold text-primary">
-          <span class="counter">10000</span>+
-        </h3>
-        <p>Happy Customers</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <i class="bi bi-building fs-1 text-primary mb-2"></i>
-        <h3 class="fw-bold text-primary">
-          <span class="counter">120</span>
-        </h3>
-        <p>Branches</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <i class="bi bi-arrow-left-right fs-1 text-primary mb-2"></i>
-        <h3 class="fw-bold text-primary">
-          <span class="counter">5000</span>+
-        </h3>
-        <p>Transactions / Day</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <i class="bi bi-award-fill fs-1 text-primary mb-2"></i>
-        <h3 class="fw-bold text-primary">
-          <span class="counter">25</span>
-        </h3>
-        <p>Years of Service</p>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-people-fill fs-1 text-primary mb-2"></i>
+          <h3 class="fw-bold text-primary">
+            <span class="counter">10000</span>+
+          </h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-building fs-1 text-primary mb-2"></i>
+          <h3 class="fw-bold text-primary">
+            <span class="counter">120</span>
+          </h3>
+          <p>Branches</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-arrow-left-right fs-1 text-primary mb-2"></i>
+          <h3 class="fw-bold text-primary">
+            <span class="counter">5000</span>+
+          </h3>
+          <p>Transactions / Day</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-award-fill fs-1 text-primary mb-2"></i>
+          <h3 class="fw-bold text-primary">
+            <span class="counter">25</span>
+          </h3>
+          <p>Years of Service</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Counter -->
 
@@ -490,7 +490,8 @@
             <div class="card-body">
               <h5 class="card-title text-primary">🧾 Open an Account</h5>
               <p class="card-text">Join EasyBank in minutes. Start your financial journey today.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#accountModal">Open Now</a>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                data-bs-target="#accountModal">Open Now</a>
             </div>
           </div>
         </div>
@@ -866,11 +867,13 @@
                 <label for="floatingName">Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com"
+                  required>
                 <label for="floatingEmail">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" name="subject" class="form-control" id="floatingSubject" placeholder="Subject" required>
+                <input type="text" name="subject" class="form-control" id="floatingSubject" placeholder="Subject"
+                  required>
                 <label for="floatingSubject">Subject</label>
               </div>
               <div class="form-floating mb-3">
@@ -881,7 +884,7 @@
               <button name="btn-contact" class="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
             </form>
 
-            
+
 
           </div>
         </div>
@@ -947,7 +950,7 @@
         <a href="#" class="text-white text-decoration-none header-nav">
           <h2>EasyBank</h2>
         </a>
-        <p>© 2025 EasyBank, Inc. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> EasyBank, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="text-white footer-icon" href="#"><i class="bi bi-whatsapp"></i></a></li>
           <li class="ms-3"><a class="text-white footer-icon" href="#"><i class="bi bi-instagram"></i></a></li>
@@ -956,6 +959,29 @@
         </ul>
       </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-sm btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg d-none"
+      style="z-index: 1050;" title="Back to top">
+      ↑
+    </button>
+
+    <!-- Year auto-update -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Show/hide back to top button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('d-none', window.scrollY < 300);
+      });
+
+      // Scroll to top on click
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
   </footer>
   <!-- Footer -->
 

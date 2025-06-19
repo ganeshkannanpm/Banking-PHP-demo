@@ -166,19 +166,13 @@
               <li><a href="#" class="nav-link px-2 text-white header-nav">Accounts</a></li>
               <li><a href="#" class="nav-link px-2 text-white header-nav">Contact</a></li>
             </ul>
-
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Search..."
-                aria-label="Search">
+            <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
             </form>
-
             <div class="text-end">
-              <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
+              <button type="button" class="btn btn-primary ms-2 me-2" data-bs-toggle="modal"
                 data-bs-target="#loginModal">Login</button>
-              <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
-                data-bs-target="#accountModal">Open A\C</button>
-              <!-- <a href="open_account.php">
-                <button type="button" class="btn btn-primary">Open A\C</button></a> -->
             </div>
           </div>
         </div>
@@ -191,7 +185,7 @@
     <div class="modal-dialog">
       <div class="modal-content rounded-3 shadow">
         <div style="background: linear-gradient(135deg, #0d6efd, #6610f2);" class="modal-header text-center bg-primary">
-          <h5 class="modal-title text-white" id="loginModalLabel">Please log in</h5>
+          <h5 class="modal-title text-white" id="loginModalLabel">User login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -221,7 +215,7 @@
     <div class="modal-dialog">
       <div class="modal-content rounded-3 shadow">
         <div style="background: linear-gradient(135deg, #0d6efd, #6610f2);" class="modal-header text-center bg-primary">
-          <h5 class="modal-title text-white text-center" id="registerModalLabel">Create your account</h5>
+          <h5 class="modal-title text-white text-center" id="registerModalLabel">Register your account</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">

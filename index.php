@@ -491,7 +491,7 @@
               <h5 class="card-title text-primary">🧾 Open an Account</h5>
               <p class="card-text">Join EasyBank in minutes. Start your financial journey today.</p>
               <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                data-bs-target="#accountModal">Open Now</a>
+                data-bs-target="#loginModal">Open Now</a>
             </div>
           </div>
         </div>

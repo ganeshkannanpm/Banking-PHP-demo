@@ -112,6 +112,11 @@ $_SESSION['balance'] = $balance;
               </a>
             </li>
             <li class="nav-item">
+              <a href="create_account.php" class="nav-link text-white ">
+                <i class="bi bi-grid me-2"></i> Open Account
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="deposit.php" class="nav-link active text-white ">
                 <i class="bi bi-cash-coin me-2"></i> Deposit
               </a>

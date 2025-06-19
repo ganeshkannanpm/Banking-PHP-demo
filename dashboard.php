@@ -135,7 +135,7 @@ if ($last_payment) {
             <div class="d-flex">
 
                 <div class=" text-end">
-                    <h3 class="text-white">Dashboard</h3>
+                    <h3 class="text-white">User Dashboard</h3>
                     <!-- <ul class="dropdown-menu text-small">
                         <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                         <li>
@@ -179,6 +179,11 @@ if ($last_payment) {
                                 <li class="nav-item">
                                     <a href="dashboard.php" class="nav-link active text-white ">
                                         <i class="bi bi-grid me-2"></i> Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="create_account.php" class="nav-link text-white ">
+                                        <i class="bi bi-grid me-2"></i> Open Account
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -242,7 +247,7 @@ if ($last_payment) {
                         <div>
                             <?php if (!empty($successMessage)): ?>
                                 <div class="alert alert-success">
-                                    <?php htmlspecialchars($successMessage) ?>
+                                    <?php echo htmlspecialchars($successMessage) ?>
                                 </div>
                             <?php endif; ?>
 
